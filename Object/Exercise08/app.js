@@ -1,9 +1,15 @@
+console.log("############ Exercise 02 ###############")
 /*
   01
 
   - Declare uma constante que recebe o seu nome;
   - Ela deve ter um escopo global.
 */
+
+console.log("-------------------------------------")
+
+const name = "Amanda Fields"
+console.log(name);
 
 /*
   02
@@ -18,6 +24,18 @@
     defined" será exibido no console;
   - Você sabe por que isso aconteceu?
 */
+
+console.log("-------------------------------------")
+
+const myAge = () => {
+  let age = 23;
+  return age;
+}
+
+console.log(myAge());
+//console.log(age);
+
+// Sim, o erro ocorreu pois a variável foi declarada apenas dentro do escopo da função, sendo assim não pode ser acessada fora dela. 
 
 /*
   03
@@ -36,6 +54,31 @@
     - getColorsMessage, que é um método que retorna a mensagem  
       "O NOME_DO_CARRO está disponível nas cores COR_01, COR_02 e COR_03".
 */
+
+console.log("-------------------------------------")
+
+const car = {
+  name: "carro 1",
+  brand: "Fiat",
+  colors: ["preto", "cinza", "vermelho"],
+  isRunning: false,
+  run: function () {
+    this.isRunning = true;
+    return `O ${this.name} está em movimento.`
+  },
+  stop: function () {
+    this.isRunning = false;
+    return `O ${this.name} está parado.`
+  },
+  getColorsMessage: function () {
+    return `O ${this.name} está disponível nas cores: ${this.colors.forEach((color) => {
+      console.log(color);
+    })}`
+
+  }
+}
+
+console.log(car.getColorsMessage())
 
 /*
   04

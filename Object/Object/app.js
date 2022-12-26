@@ -14,6 +14,12 @@ let user = {
     },
     logout: function () {
         console.log("Usuário deslogado");
+    },
+    logBlogPosts: function () {
+        console.log(`Encontrei os posts de Vanessa:`)
+        this.blogPosts.forEach((posts) => {
+            console.log(posts)
+        })
     }
 }
 
@@ -62,3 +68,8 @@ let age = 31
 if (true) {
     let age = 41
 }
+
+//THIS
+console.log("----------------------\n")
+
+console.log(user.logBlogPosts());

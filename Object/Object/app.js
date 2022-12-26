@@ -20,16 +20,16 @@ let user = {
 console.log(typeof (user))
 console.log(user);
 
-//Notação de ponto
+//(Notação de ponto)
 console.log(user.name);
 console.log(user.blogPosts[1])
 user.name += " Jéssica"
 console.log(user.name);
 
-//Notação de colchete
+//(Notação de colchete)
 console.log(user['age']);
 
-//Utilização da notação de colchete
+//(Utilização da notação de colchete)
 const key = 'email'
 console.log(user[key]);
 
@@ -51,3 +51,14 @@ console.log("----------------------\n")
 
 user.login()
 user.logout()
+
+//VARIAVEIS E ESCOPO DE BLOCO
+console.log("----------------------\n")
+
+//(escopo global)
+let age = 31
+
+//(escopo local do bloco)
+if (true) {
+    let age = 41
+}

@@ -78,3 +78,10 @@ console.log("----------------------\n")
 
 //(Math é um objeto várias propriedades e métodos)
 console.log(Math)
+
+//(Exemplo de propriedade contida no objeto Math)
+console.log(Math.PI)
+
+//(Método do Math para arredondar um valor)
+let value = 14.3;
+console.log(Math.round(value))

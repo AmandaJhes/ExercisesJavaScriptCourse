@@ -71,5 +71,10 @@ if (true) {
 
 //THIS
 console.log("----------------------\n")
-
 console.log(user.logBlogPosts());
+
+//OBJETO MATH
+console.log("----------------------\n")
+
+//(Math é um objeto várias propriedades e métodos)
+console.log(Math)

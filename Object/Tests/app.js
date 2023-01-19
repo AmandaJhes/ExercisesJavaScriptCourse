@@ -34,12 +34,25 @@ names.map((item, i) => {
 })
 
 // Exemplo:
-
 console.log('')
 const retornoDoMap = names.map((item, i) => {
     console.log(item, i);
+
+    return item.toUpperCase()
 });
+console.log('\nRetorno do Map: ', retornoDoMap)
 
 const retornoDoForEach = names.forEach((item, indice) => {
     console.log(item, indice);
 })
+console.log('\nRetorno do forEach: ', retornoDoForEach)
+
+//Explicação: o MAP serve para você gerar uma nova lista aplicando uma alteração a essa lista original.
+
+//forEach não retorna nada apenas undefined
+
+//Utilidade prática: Utilizar o map facilita para fazermos concatenações de operações como fazer um map e imendar com um filter, visto que o retorno do map é um array ex: .map().filter
+
+console.log('\nUso do map:')
+const retornoDoExemplo = names.map(name => name.toLowerCase).filter(name => name === 'bagulhos')
+console.log(retornoDoExemplo)

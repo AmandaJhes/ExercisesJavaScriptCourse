@@ -85,3 +85,25 @@ console.log(Math.PI)
 //(Método do Math para arredondar um valor)
 let value = 14.3;
 console.log(Math.round(value))
+
+//TIPOS PRIMIIVO E REFERÊNCIA
+console.log("----------------------\n")
+
+//(Valores primitivos)
+let scoreOne = 50
+let scoreTwo = scoreOne
+
+scoreTwo = 100
+//(Geram variáveis idependentes que popdem ser alteradas individualmente)
+console.log(`scoreOne: ${scoreOne} | scoreTwo: ${scoreTwo}`)
+
+//(Valores Referência)
+let userOne = { name: 'Amanda', age: 23 }
+let userTwo = userOne
+
+//(Geram um ponteiro que apontam para o mesmo objeto de referência)
+console.log(userOne, userTwo)
+
+userTwo.age = 25
+
+console.log(userOne, userTwo)

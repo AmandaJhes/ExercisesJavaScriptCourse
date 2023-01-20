@@ -53,6 +53,9 @@ console.log('\nRetorno do forEach: ', retornoDoForEach)
 
 //Utilidade prática: Utilizar o map facilita para fazermos concatenações de operações como fazer um map e imendar com um filter, visto que o retorno do map é um array ex: .map().filter
 
+//O for each é recomendado para fazer comparações
+//O map serve para modificar o array, sem perder o array original visto que ele gera um novo array
+
 console.log('\nUso do map:')
-const retornoDoExemplo = names.map(name => name.toLowerCase).filter(name => name === 'bagulhos')
+const retornoDoExemplo = names.map(name => { return name.toUpperCase() }).includes('TESTE')
 console.log(retornoDoExemplo)

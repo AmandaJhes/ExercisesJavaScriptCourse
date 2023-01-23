@@ -28,11 +28,11 @@ const best2019Movies = [
 ]
 
 let melhor = ''
-
 best2019Movies.forEach(x => melhor += `
- -${x.title} , dirigido por ${x.directedBy}`)
-
+  -${x.title}, dirigido por ${x.directedBy}`)
 console.log(` Segundo o site Omelete, os melhores filmes de 2019 são: ${melhor}`)
+
+
 /*
   02
 
@@ -81,6 +81,7 @@ youtubeUser.expor()
   - Exiba o valor do PI no console.
 */
 
+console.log(Math.PI)
 
 
 /*
@@ -91,6 +92,7 @@ youtubeUser.expor()
 */
 
 const firstNumber = 8.3
+console.log(Math.ceil(firstNumber))
 
 /*
   05
@@ -100,6 +102,7 @@ const firstNumber = 8.3
 */
 
 const secondNumber = 3.5
+console.log(Math.round(secondNumber))
 
 /*
   06
@@ -126,5 +129,5 @@ console.log(Math.trunc(thirdNumber))
   - A cada vez que o index.html for carregado, exiba no console um número  
     aleatório de 0 à 10, incluindo 0 e 10.
 */
-let number = Math.random() * 10
-console.log(Math.trunc(number))
+let number = Math.random()
+console.log(Math.round(number * 10))

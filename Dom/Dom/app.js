@@ -38,4 +38,26 @@ const external = () => {
 
 //(podem buscar variáveis no escopo acima)
 
-external()
+// external()
+
+
+//QUERY SELECTOR
+const paragraph = document.querySelector('p')
+console.log(paragraph)
+
+const paragraphErro = document.querySelector('.error')
+console.log(paragraphErro)
+
+const divErro = document.querySelector('div.error')
+console.log(divErro)
+
+const uniqueSelector = document.querySelector('#exercise > div:nth-child(2) > p:nth-child(2)')
+console.log(uniqueSelector)
+
+//QUERY SELECTOR ALL
+const paragraphs = document.querySelectorAll('p');
+console.log(paragraphs)
+
+//(o resultado dessa seleção é um nodeList, o nodeList não é um array mas possui algumas propriedades e métodos)
+console.log(paragraphs[1])
+

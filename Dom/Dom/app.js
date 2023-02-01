@@ -61,3 +61,7 @@ console.log(paragraphs)
 //(o resultado dessa seleção é um nodeList, o nodeList não é um array mas possui algumas propriedades e métodos)
 console.log(paragraphs[1])
 
+paragraphs.forEach((paragraph) => {
+    console.log(paragraph)
+})
+

@@ -65,3 +65,20 @@ paragraphs.forEach((paragraph) => {
     console.log(paragraph)
 })
 
+//OUTRAS QUERIES
+
+//(método do DOM para obter um elemento através do ID)
+const title = document.getElementById('exercise')
+console.log(title)
+
+//(método do DOM para obter um elemento através do nome da classe)
+
+const errors = document.getElementsByClassName('error')
+console.log(errors)
+//(método do DOM para obter um elemento através do nome da classe)
+
+//Retorna um HTML Collection que não possui todos os métodos e propriedades de um nodeList e array, sendo assim melhor utilizar, a princípio, o método querySelector que retorna um nodeList. 
+
+const paragraphsTag = document.getElementsByTagName('p')
+console.log(paragraphsTag)
+

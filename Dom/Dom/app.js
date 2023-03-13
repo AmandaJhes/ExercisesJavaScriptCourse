@@ -82,3 +82,5 @@ console.log(errors)
 const paragraphsTag = document.getElementsByTagName('p')
 console.log(paragraphsTag)
 
+//EVENTS
+
